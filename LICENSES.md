@@ -1,25 +1,25 @@
 # Licences
 
-Oriel is free to use during the beta. Oriel's own code is not open source (all rights reserved); the libraries and
-models it uses keep their own licences, listed here. Oriel downloads the models from their official pages; the only
+Oriel is free to use under its [terms of use](TERMS.md). Oriel's own code is not open source (all rights reserved); the
+libraries and models it uses keep their own licences, listed here. Oriel downloads the models from their official pages; the only
 model inside the installer is TransNetV2 (shot detection, MIT).
 
 ## AI models
 
 | Model | What Oriel uses it for | Licence | Commercial use |
 |---|---|---|---|
-| SigLIP2 so400m (Google) — `google/siglip2-so400m-patch14-384` | visual search (required) | Apache-2.0 | yes |
-| TransNetV2 (bundled) | shot detection | MIT | yes |
-| opus-mt es-en (Helsinki-NLP) | translating Spanish searches into English | CC-BY-4.0 | yes, with attribution |
-| Qwen3-ASR 1.7B / 0.6B (Qwen) | speech transcription | Apache-2.0 | yes |
-| Qwen3-VL 4B Instruct (Qwen) | attributes, logos and text on screen, descriptions (NVIDIA only) | Apache-2.0 | yes |
+| [SigLIP2 so400m (Google)](https://huggingface.co/google/siglip2-so400m-patch14-384) | visual search (required, every profile) | Apache-2.0 | yes |
+| [TransNetV2](https://github.com/soCzech/TransNetV2) (bundled) | shot detection | MIT | yes |
+| [opus-mt es-en (Helsinki-NLP)](https://huggingface.co/Helsinki-NLP/opus-mt-es-en) | translating Spanish searches into English | Apache-2.0 (model card; the OPUS-MT project asks for attribution) | yes |
+| [Qwen3-ASR 0.6B](https://huggingface.co/Qwen/Qwen3-ASR-0.6B) (Light) / [1.7B](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) (Standard, Pro) | speech transcription | Apache-2.0 | yes |
+| [Qwen3-VL 2B Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct) (Standard) / [4B Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct) (Pro) | attributes, logos and text on screen, descriptions (NVIDIA only) | Apache-2.0 | yes |
 | Qwen3-VL Embedding 2B / Reranker 2B (Qwen) | optional search models | Apache-2.0 | yes |
 | Whisper large-v3 turbo / base (OpenAI; faster-whisper conversions) | optional transcription | MIT | yes |
 | Parakeet TDT 0.6B v3 (NVIDIA; ONNX conversion) | optional transcription | CC-BY-4.0 | yes, with attribution |
 | Silero VAD | voice detection | MIT | yes |
 | distilbart CNN 12-6 | optional English summaries | Apache-2.0 | yes |
 | pyannote speaker-diarization community-1 | optional speakers (needs a free Hugging Face account and accepting its terms) | CC-BY-4.0 | yes, with attribution |
-| **insightface buffalo_l** | optional face groups | **non-commercial research only** | **no** |
+| **[insightface buffalo_l](https://github.com/deepinsight/insightface)** | optional face groups | **non-commercial research only** | **no** |
 
 **The face model.** insightface's code is MIT, but its pre-trained models (buffalo_l) may only be used for
 non-commercial research. In Oriel the face model is **optional and off by default**: the wizard and
@@ -52,5 +52,5 @@ The interface: Svelte, SvelteKit and Vite (MIT); the Manrope font (SIL Open Font
 
 ## Attribution
 
-Oriel uses opus-mt (© Helsinki-NLP, CC-BY-4.0), Parakeet TDT (© NVIDIA, CC-BY-4.0) and pyannote speaker-diarization
+Oriel uses opus-mt (© Helsinki-NLP / OPUS-MT), Parakeet TDT (© NVIDIA, CC-BY-4.0) and pyannote speaker-diarization
 community-1 (© pyannoteAI, CC-BY-4.0).
