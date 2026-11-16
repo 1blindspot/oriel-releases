@@ -1,5 +1,22 @@
 # What's new in Oriel
 
+## 3.4.0 beta — a real time left, the profile in view and "Check for updates"
+
+- **Fixed: the time left of an analysis could grow to thousands of hours** (about 20,000 h for 800 videos on an RTX
+  5070 Ti). It counted the whole session, including the time spent **waiting for memory** (Premiere open) and
+  **loading a model** for the first time. Now only the time spent working counts, with the speed measured on your PC,
+  and the time left is a **range**. While Oriel waits for memory it says so and the number does not grow.
+- **Quick search first**: in a new folder, Oriel first finds the shots and makes the visual search for every file;
+  the heavy steps (speech, details, descriptions, marks) follow in the background. You see "Searchable now: 120 of
+  800 · full analysis ~3 h left". Pause and Resume work as before.
+- **Your profile in view**: Analyze and Settings show e.g. "Pro · RTX 5070 Ti · GPU" or "Light · CPU". If your PC
+  has an NVIDIA card but Oriel runs on the CPU, a clear warning says how to fix it.
+- **"Check for updates" button** in the top bar (app and panels), with a dot when a new version is out. Oriel also
+  checks by itself once a day. Recent notices are now in **Settings › Notices**.
+- A step whose model is not downloaded yet waits instead of downloading inside the analysis.
+- The installer checks that PyTorch can use your NVIDIA card; if not, it reinstalls the GPU version and, if that is
+  not enough, tells you to update the NVIDIA driver.
+
 ## 3.1.0 beta — model profiles and terms of use
 
 - **Model profiles**: **Light** (integrated graphics or CPU only), **Standard** (NVIDIA with about 6–10 GB) and **Pro**
