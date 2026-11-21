@@ -1,5 +1,26 @@
 # What's new in Oriel
 
+## 3.5.0 beta — Oriel as your agent's database
+
+- **A shot catalogue written by your AI agent**: one line per shot (file and range, what is seen, real year, place,
+  side, people each with a written source and date, marks with their position, title cards / black tails, photo
+  passes / animated photos / dramatizations / AI, archive or modern). A person without a written source is refused:
+  a face is never a source. Lines stay provisional until the project is approved.
+- **Search by the narration's phrase** (`catalog-search`): the part's era is a hard filter, people only through
+  their source, at most ~6 shots per source and part (copies of the same newsreel count as one source), no title
+  cards, black tails, filler statues, undated compilations or anything that looks like bodies, and a suggested crop
+  per source or per mark position.
+- **Gaps before placing** (`catalog-gaps` with the SRT), batch commands from a file (`catalog-write`, `catalog-use`,
+  `catalog-lines`, `catalog-import`) and `register-media` (files catalogued where they are, never moved).
+- **`approve-project`**: reads a copy of the Premiere project, the final sequence and its nested parts; what stayed
+  is approved, what got a review label keeps its verdict, what was replaced is not approved.
+- **GPU analysis per client** (Settings › client): when off, the inbox is taken into the library without it.
+- The estimate before starting an analysis is a **range** too.
+- Fixed: a client whose disk disconnects for a moment stays the active client (the app no longer switches by
+  itself); agent orders with `--client` work for a client that is not the active one; `prune-uses --unplaced` keeps
+  the uses that are on the timeline; early colour photos (autochromes, Prokudin-Gorsky) are no longer flagged as
+  present-day photos; a file a project uses where it is is never moved by itself.
+
 ## 3.4.0 beta — a real time left, the profile in view and "Check for updates"
 
 - **Fixed: the time left of an analysis could grow to thousands of hours** (about 20,000 h for 800 videos on an RTX

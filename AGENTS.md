@@ -69,6 +69,15 @@ Every command except `ping` and `capabilities` needs `--client <slug or name>`.
 8. **New downloads** go through the client's inbox or `ingest_media` / `register_download`: they wait for the user's
    approval before they can be searched or used.
 
+9. **The shot catalogue (3.5.0)**: when the user prefers that you work by hand, Oriel is your database. Write one
+   line per shot you looked at (MCP `catalog_write`, CLI `oriel --client <c> catalog-write --file lines.json`: what
+   is seen, real year, place, side, people each with a WRITTEN source, marks with their position, title cards / black
+   tails, photo passes / AI...), search it by the narration's phrase (`catalog_search` / `catalog-search`: the part's
+   era is a hard filter, at most ~6 shots per source and part, each result with its crop), see the gaps before
+   placing (`catalog_gaps` / `catalog-gaps --srt`) and log uses in batches (`catalog_use` / `catalog-use`). Lines
+   stay provisional until the user approves the video: `approve_project` / `approve-project <name>` (a copy of
+   the Premiere project is read; use `--dry-run` first).
+
 Other useful tools: `get_transcript`, `get_frame` (look at a result), `find_similar`, `build_timeline` (an
 FCPXML / EDL / OTIO timeline from clips, logged as uses), `read_timeline` / `review-timeline` (what the editor
 placed or rejected), `coverage` (how much usable material there is for a script), `list_people` and
