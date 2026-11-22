@@ -1,5 +1,28 @@
 # What's new in Oriel
 
+## 3.6.0 beta — Oriel in four tabs
+
+- **Four tabs: Search · Library · Review · Analyze.** Help and Settings are icons at the top right, next to the
+  client, Simple/Advanced and "Check for updates". A status bar at the bottom shows the profile, the library disk,
+  "GPU analysis off for this client" when it applies, and the version.
+- **Search**: one big bar with two modes, **Describe** and **From script** (it replaces the Script tab); chips for the
+  part's era, place, person, side, Videos/Images and **Approved only**. Every result shows its catalogue status
+  (Approved / Provisional / Unverified) and the suggested crop.
+- **Library**: a side menu (Browse, All media, Collections, Sources, People), people as a filter, catalogue status
+  cards, browse by year and by place or topic, and the synced folders with their status.
+- **Review**: only what needs your decision, one card per case with 2–3 buttons, filters by type and how many files
+  were approved by themselves. Dangerous actions still ask first; deletions go to the Recycle Bin.
+- **Analyze**: one card, "Searchable now: X of Y · ~N h left" with a range, Pause/Stop, folded details, the notice
+  for a client with GPU analysis off, and "Next in line".
+- **Simple / Advanced**: Simple hides the technical parts without removing any function; your choice is remembered.
+  Simple is the default.
+- **Panels (Premiere Pro, After Effects, DaVinci Resolve, 420 px)**: tabs with icon and name, a minimal header with
+  client and project, results as a list. In DaVinci Resolve, the **"From playhead line"** chip searches with the
+  subtitle line under the playhead (not shown in Premiere Pro or After Effects, which cannot read it reliably).
+- Accessibility: visible keyboard focus, higher-contrast field borders, text of at least 11–12 px and named icon
+  buttons.
+- Nothing was removed: every old tab opens its new place, and the agent commands (CLI and MCP) are unchanged.
+
 ## 3.5.0 beta — Oriel as your agent's database
 
 - **A shot catalogue written by your AI agent**: one line per shot (file and range, what is seen, real year, place,

@@ -9,6 +9,9 @@ It runs on your PC: your footage, your catalogue and your searches never leave i
 
 ## What it does
 
+- **Four tabs**: **Search** (describe a shot or paste a script), **Library** (browse by year, place, person and
+  catalogue status), **Review** (only what needs your decision) and **Analyze** (how much is searchable and the time
+  left). **Simple** mode hides the technical parts; **Advanced** shows everything.
 - **Search by what is seen** (visual search) and **by what is said** (speech, in 50+ languages).
 - **Clients and projects**: each client has its own library, language and rules. Libraries never mix.
 - **No repeats**: Oriel remembers what you already used in a project, so the same clip is not suggested twice.
