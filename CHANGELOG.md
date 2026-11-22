@@ -1,5 +1,19 @@
 # What's new in Oriel
 
+## 3.8.0 beta — search by meaning
+
+- **Search by meaning** (multilingual, with a free local sentence model): the Search tab also finds Oriel's
+  descriptions by what they mean, not only by their words, and the shot catalogue your agent writes is searched the
+  same way (`catalog-search`). The hard filters do not change.
+- **Topics** for catalogue lines (`catalog-write` "topics": 1-3 of a small closed list — what a shot can
+  illustrate). Agents write them; with the private topic list switched on for a client, existing lines get them
+  automatically.
+- **One visible batch** in Analyze ("Search by meaning" → Prepare), with Pause and Stop; it uses the GPU when there
+  is one and also works on the CPU. New lines get their vector when they are written.
+- **Review**: short possibly sensitive ranges are blocked by themselves whatever the confidence, with Undo.
+- **Analyze**: in Simple, the automatic intake shows a link to Review instead of the full list; the reasons are
+  shown in your language.
+
 ## 3.7.0 beta — Review decides the safe cases by itself
 
 - **Review is more automatic**: with fixed rules (always the safe side) Oriel itself sends an identical duplicate's

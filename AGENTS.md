@@ -76,7 +76,9 @@ Every command except `ping` and `capabilities` needs `--client <slug or name>`.
    era is a hard filter, at most ~6 shots per source and part, each result with its crop), see the gaps before
    placing (`catalog_gaps` / `catalog-gaps --srt`) and log uses in batches (`catalog_use` / `catalog-use`). Lines
    stay provisional until the user approves the video: `approve_project` / `approve-project <name>` (a copy of
-   the Premiere project is read; use `--dry-run` first).
+   the Premiere project is read; use `--dry-run` first). Since 3.8.0 each line can carry 1-3 `topics` (what the
+   shot can illustrate, from a closed list the tool description gives) and the search also works by meaning, so an
+   abstract phrase of the narration finds shots that illustrate it.
 
 10. **Review (3.7.0)**: Oriel decides the safe Review cases by itself with fixed rules (an identical duplicate's new
     copy to the rejected folder, short possibly sensitive ranges blocked, a source found next to a file) and leaves
