@@ -78,6 +78,12 @@ Every command except `ping` and `capabilities` needs `--client <slug or name>`.
    stay provisional until the user approves the video: `approve_project` / `approve-project <name>` (a copy of
    the Premiere project is read; use `--dry-run` first).
 
+10. **Review (3.7.0)**: Oriel decides the safe Review cases by itself with fixed rules (an identical duplicate's new
+    copy to the rejected folder, short possibly sensitive ranges blocked, a source found next to a file) and leaves
+    the doubtful ones to the user, each with its reason. `review_list` / `oriel --client <c> review-list --mine`
+    lists them; `review_decide` / `review-decide <case> auto | source --url <url> | block` resolves a case with the
+    same rules. Approving, rejecting, deleting or "it is fine" are the user's: they answer `user_only`.
+
 Other useful tools: `get_transcript`, `get_frame` (look at a result), `find_similar`, `build_timeline` (an
 FCPXML / EDL / OTIO timeline from clips, logged as uses), `read_timeline` / `review-timeline` (what the editor
 placed or rejected), `coverage` (how much usable material there is for a script), `list_people` and

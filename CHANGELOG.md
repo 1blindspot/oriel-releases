@@ -1,5 +1,26 @@
 # What's new in Oriel
 
+## 3.7.0 beta — Review decides the safe cases by itself
+
+- **Review is more automatic**: with fixed rules (always the safe side) Oriel itself sends an identical duplicate's
+  new copy to the rejected folder (never deleted), blocks short possibly sensitive ranges and keeps the rest of the
+  file available, fills in a source it finds next to a file (.info.json, a registered URL, a Commons page), and
+  marks footage as modern only when its name says a present-day year. Early colour photos are never "modern".
+  When a project uses a copy, the new copy is sharper, the marks cover most of the file or the confidence is low,
+  the case is yours, with the reason.
+- **"Approved automatically"** lists every decision (what, why, when) with **Undo**. Files the rules settled but
+  that would have to move wait in one "ready" card that asks first; files a project uses where they are are listed
+  apart and never moved.
+- **"Apply to all similar"** gives your decision to the cases like it, after a confirmation with the count.
+- Agents: `review_list` / `review-list` and `review_decide` / `review-decide <case> auto | source | block`, with the
+  same rules; the doubtful cases stay yours.
+- **"From playhead line" in Premiere Pro**: the playhead of the active sequence and the project's SRT in
+  6_DOCUMENTS (the part's SRT for P01…P11, the full one for the VIDEO FINAL). When no SRT fits, the chip says so.
+  Read-only. Still hidden in After Effects.
+- **Simple Search** shows the results right after the filters (project, result filters and selection are in
+  Advanced). **Panels**: the results come first and the filters fold into one "Filters (n)" line; one label per
+  thumbnail. **Analyze** for a client with GPU analysis off shows no time estimate.
+
 ## 3.6.0 beta — Oriel in four tabs
 
 - **Four tabs: Search · Library · Review · Analyze.** Help and Settings are icons at the top right, next to the
