@@ -4,14 +4,20 @@
 rain", "someone saying *we never gave up*") and Oriel shows the shots and lines that match, in your videos and images.
 It runs on your PC: your footage, your catalogue and your searches never leave it.
 
-> **Beta.** This is a beta version of Oriel (3.1.0 beta). Things may change between versions. Please send
-> what you find through **Help › Send a suggestion** inside the app.
+> **Oriel 4.0.0** is the first stable version. Please send what you find through **Help › Send a suggestion**
+> inside the app.
 
 ## What it does
 
 - **Four tabs**: **Search** (describe a shot or paste a script), **Library** (browse by year, place, person and
   catalogue status), **Review** (only what needs your decision) and **Analyze** (how much is searchable and the time
-  left). **Simple** mode hides the technical parts; **Advanced** shows everything.
+  left). **Simple** mode (the default) hides the technical parts; **Advanced** shows everything.
+- **Searchable fast**: Oriel first makes every file searchable (shots and visual search) and then does the heavy
+  analysis. Analyze shows "Searchable now", the time left as a range, and the profile in use (for example
+  "Pro · RTX 5070 Ti · GPU" or "Light · CPU").
+- **Review that does the safe part for you**: duplicates, intake checks and possibly sensitive ranges are resolved
+  by fixed safe rules; every automatic decision is logged and has **Undo**, and "Apply to all similar" settles a
+  group at once.
 - **Search by what is seen** (visual search), **by what is said** (speech, in 50+ languages) and **by meaning**
   (a free local model finds descriptions that mean what you wrote, in English or Spanish).
 - **Clients and projects**: each client has its own library, language and rules. Libraries never mix.
@@ -21,7 +27,8 @@ It runs on your PC: your footage, your catalogue and your searches never leave i
 - **Inbox folder**: download straight into the client's `_INBOX`; Oriel takes each finished file, spots duplicates
   and files it by type. Every move is logged and can be undone.
 - **Panels for Premiere Pro, After Effects and DaVinci Resolve Studio**: search and place clips without leaving
-  the editor.
+  the editor. Results come first and the filters fold away; in Premiere, **From playhead line** searches for the
+  subtitle line under the playhead.
 - **AI agents** (Claude, Codex, Cursor and others) can search, log uses and look up sources through MCP or the
   `oriel` command line. See [AGENTS.md](AGENTS.md).
 
@@ -56,10 +63,10 @@ note "This needs the Standard or Pro profile".
 
 ## Install
 
-1. Download `Oriel-Setup-<version>-beta.zip` from the [Releases](../../releases) page.
+1. Download `Oriel-Setup-<version>.zip` from the [Releases](../../releases) page.
 2. Right-click the zip › **Extract All…** (do not run it from inside the zip).
 3. Double-click **`Install Oriel.cmd`**.
-   - Windows may show *"Windows protected your PC"* (SmartScreen) because the beta is not signed yet: click
+   - Windows may show *"Windows protected your PC"* (SmartScreen) because Oriel is not signed yet: click
      **More info › Run anyway**.
 4. Follow the window: it checks Python and ffmpeg, detects your graphics card, installs the Python packages
    (about 1 GB in CPU mode, about 3 GB with an NVIDIA card) and creates the **Oriel** shortcuts.
@@ -84,7 +91,8 @@ Then open **Analyze**, add the batch and press **Start**. When it ends, search i
 
 ## Updates
 
-**Settings › Version and updates › Check for updates** looks for a newer version on this repository's Releases page.
+**Check for updates** (the icon at the top, or **Settings › Version and updates**) looks for a newer version on this
+repository's Releases page; Oriel also checks once a day by itself.
 Updating replaces only Oriel's code: your clients, catalogues, settings and models stay as they are, and the previous
 version is kept beside it until the next update.
 
@@ -97,7 +105,7 @@ when you press *Send*. No accounts, no analytics. Full details: [PRIVACY.md](PRI
 
 The full text is in [TERMS.md](TERMS.md) and in the app (Settings › Terms of use, in English and Spanish). In short:
 
-- Oriel is **free** and in **beta**. It is provided **"as is"**, without warranties of any kind.
+- Oriel is **free**. It is provided **"as is"**, without warranties of any kind.
 - The author is not responsible for any loss of data or files, or any damage, caused by its use. **Keep backups.**
 - Everything runs locally. Oriel only goes online to download models, check for updates and send suggestions (when
   you ask it to). No usage data is collected.

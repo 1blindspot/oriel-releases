@@ -1,9 +1,9 @@
 # Oriel — Terms of use
 
-Version of 2026-11-01. Oriel shows these terms the first time it opens (and again when they change); you must agree
+Version of 2026-11-22. Oriel shows these terms the first time it opens (and again when they change); you must agree
 to them to use Oriel. They are also in the app: Settings › Terms of use (in English and Spanish).
 
-1. Oriel is free and in beta. It is provided "as is", without warranties of any kind.
+1. Oriel is free. It is provided "as is", without warranties of any kind.
 2. The author is not responsible for any loss of data or files, or any damage, caused by its use. Keep backups of
    your work.
 3. Everything runs locally, on your computer. Oriel only goes online to download models, to check for updates and to

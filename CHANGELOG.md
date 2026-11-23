@@ -1,5 +1,34 @@
 # What's new in Oriel
 
+## 4.0.0 — the first stable version
+
+Oriel 4.0.0 brings together everything of 3.4.0 to 3.8.0, and it is no longer a beta.
+
+- **A real time left**: the estimate counts only the work being done (not the time spent waiting for free memory)
+  and is shown as a **range**, also before an analysis starts.
+- **The profile in view**: Analyze and Settings say what Oriel is using, for example "Pro · RTX 5070 Ti · GPU" or
+  "Light · CPU", and warn when there is an NVIDIA card but the CPU is being used.
+- **Searchable first**: Oriel first makes every file searchable (shots and visual search) and then does the heavy
+  analysis. Analyze shows "Searchable now".
+- **Check for updates**: one button at the top looks for a new version right away; Oriel also checks once a day.
+  Notices are in Settings › Notices.
+- **Four tabs**: Search · Library · Review · Analyze, with Help and Settings as icons, and **Simple / Advanced**
+  mode (Simple, the default, hides the technical parts).
+- **A new panel** for Premiere Pro, After Effects and DaVinci Resolve: results first, the filters folded into one
+  line, one label per thumbnail.
+- **Review does the safe part for you**: fixed safe rules settle the clear cases (an identical new copy goes to the
+  rejected folder, never deleted; short possibly sensitive ranges are blocked; a source found next to a file is
+  filled in). Every automatic decision is logged with **Undo**, and "Apply to all similar" settles a group at once.
+- **Search by meaning** (multilingual, with a free local model): finds descriptions that mean what you wrote, even
+  in other words. It is prepared in one visible batch in Analyze, with Pause and Stop, on the GPU or the CPU.
+- **From playhead line** in Premiere Pro: searches for the subtitle line under the playhead, from an SRT file beside
+  the project. Read-only.
+- **Terms of use**: they no longer say "beta", so Oriel asks you to agree to them once more.
+- **Notifications**: green (done) and information notices fade by themselves after about 8 seconds; with the
+  mouse over one it waits, and it goes on when the mouse leaves. Red (error) and yellow (warning) ones stay until you
+  close them with the X. The same in the app and in the three panels; the history is in Settings › Notices.
+- Updating: a stable version counts as newer than any beta, so every beta finds 4.0.0 through Check for updates.
+
 ## 3.8.0 beta — search by meaning
 
 - **Search by meaning** (multilingual, with a free local sentence model): the Search tab also finds Oriel's
